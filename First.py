@@ -67,3 +67,17 @@ def myfunc():
 myfunc()
 print("Python is " + x)
     
+# Example global keyword
+def myfunc():
+    global x
+    x = "fantastic"
+myfunc()
+print("python is " + x)
+
+# 
+x = "awesome"
+def myfunc():
+    global x
+    x = "Fantastic"
+myfunc()
+print("Python is " + x)
