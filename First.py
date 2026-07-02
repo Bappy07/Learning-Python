@@ -81,3 +81,33 @@ def myfunc():
     x = "Fantastic"
 myfunc()
 print("Python is " + x)
+
+Python data type 
+Text type: str
+Numeric type:int, float, complex
+Sequence type:  list, tuple, range
+Mapping type: dict
+Set type: set, frozenset
+Boolean type: bool
+Binary type: bytes, bytearray, memoryview
+None type: NoneType
+
+
+For Example
+x = "Hello  world" str
+x = 20 int
+x = 20.5 float
+x = 1j complex
+x = ["apple","banana","cherry"] list
+x = ("apple","banana","cherry") tuple
+x = range(6) range
+x = {"name": "John" , "age" : 36} dict
+x = {"apple","banana","chery"} set
+x = frozenset({"apple","banana","cherry"}) frozenset
+x = True  bool
+x = b"Hello" bytes
+x = bytearray(5)  bytearray
+x = memoryview(bytes(5)) memoryview
+x = none Nonetype
+
+
