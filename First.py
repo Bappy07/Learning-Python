@@ -110,4 +110,10 @@ print("Python is " + x)
 # x = memoryview(bytes(5)) memoryview
 # x = none Nonetype
 
+Equal : a == b 
+Not Equals: a != b
+less than: a < b
+less than or equal to: a <= b
+greater than: a > b
+greater than or equal to: a >= b
 
