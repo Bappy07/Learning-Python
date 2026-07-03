@@ -107,13 +107,74 @@ print("Python is " + x)
 # x = True  bool
 # x = b"Hello" bytes
 # x = bytearray(5)  bytearray
-# x = memoryview(bytes(5)) memoryview
-# x = none Nonetype
+# x = memoryview(bytes(5)) memoryview# x = none Nonetype
 
-Equal : a == b 
-Not Equals: a != b
-less than: a < b
-less than or equal to: a <= b
-greater than: a > b
-greater than or equal to: a >= b
+# Equal : a == b 
+# Not Equals: a != b
+# less than: a < b
+# less than or equal to: a <= b
+# greater than: a > b
+# greater than or equal to: a >= b
 
+a = 33
+b = 200
+if b > a:
+    print("b is greater than a")
+    
+number = 15
+if number > 0:
+    print("The number is positive")
+    
+age = 20
+if age >= 18:
+        print("You are an adult")
+        print("You can vote")
+        print("You have full legal rights")
+
+is_logged_in = True
+if is_logged_in:
+    print("welcome back")
+    
+# python elif
+a = 33
+b = 33
+if b > a:
+    print("b is bigger than a")
+elif a == b:
+    print("Number are equal")
+    
+score = 65
+if score >= 90:
+    print("Grade: A")
+elif score >= 80:
+    print("Grade: B")
+elif score >= 70:
+    print("Grade: C")
+elif score >= 60:
+    print("Grade: D")
+
+age = 25
+if age < 13:
+    print("You are a child")
+elif age < 20:
+    print("You are a teenager")
+elif age < 65:
+    print("You are and adult")
+elif age >= 65:
+    print("You are a seinor")
+# example
+day = 5
+if day == 1:
+    print("Monday")
+elif day == 2:
+    print("Tuesday")
+elif day == 3:
+    print("Wednesday")
+elif day == 4:
+    print("Thursday")
+elif day == 5:
+    print("Friday")
+elif day == 6:
+    print("Saturday")
+elif day == 7:
+    print("Sunday")
