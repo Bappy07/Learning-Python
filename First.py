@@ -142,7 +142,7 @@ if b > a:
     print("b is bigger than a")
 elif a == b:
     print("Number are equal")
-    
+# example  
 score = 65
 if score >= 90:
     print("Grade: A")
@@ -152,7 +152,7 @@ elif score >= 70:
     print("Grade: C")
 elif score >= 60:
     print("Grade: D")
-
+# example  
 age = 25
 if age < 13:
     print("You are a child")
@@ -178,3 +178,9 @@ elif day == 6:
     print("Saturday")
 elif day == 7:
     print("Sunday")
+    
+# example  
+a = 200
+b = 33
+if b > a:
+    print("b is grater than a")
