@@ -54,7 +54,7 @@ y = "is "
 z = "awesome"
 print(x + y + z)
 
-# golbal variable
+# olobal variable
 x = "awesome"
 def myfunc():
      print("Python is " + x)
@@ -179,8 +179,179 @@ elif day == 6:
 elif day == 7:
     print("Sunday")
     
-# example  
+# example  of else
+# The else keyword catches anything which isnt caught by the preceding conditions.
+# the else statement is executed when the if condition and any elif conditons evaluate false
 a = 200
 b = 33
 if b > a:
-    print("b is grater than a")
+    print("a is not grater than b")
+elif a == b:
+    print("b and a are same")
+else:
+    print("a is greater than b")
+
+# example
+a = 200
+b = 30
+if b > a:
+    print("b is greater than a")
+else:
+    print("b is not greater than a")
+    
+# example
+number = 7
+if number % 2 == 0:
+    print("The number is even")
+else:
+    print("The number is odd")
+    
+# example combine if else elif
+temperature = 22
+if temperature > 30:
+    print("It's hot outside")
+elif temperature > 20:
+    print ("It's warm outside")
+elif temperature > 10:
+    print("It's cool outside")
+else:
+    print("It's cold outside")
+    
+# example
+username = "Email"
+if len(username) > 0:
+    print(f"Welcome,{username}")
+else:
+    print("Error: Username cannot be empty")
+
+# exammple one line if statement
+a = 5
+b = 2
+if a > b: print("a is greater than b")
+
+# short hand if else
+a = 2
+b = 330
+print("A") if a > b else print("B")
+
+# asigne value with if else
+a = 10
+b = 30
+bigger = a if a > b else b
+print("Bigger is", bigger)
+
+# Multiple condition
+a = 222
+b = 344
+print("A") if a > b else print ("=") if a == b else print("B")
+
+# examples
+x = 15
+y = 34
+max_value = x if x > y else y
+print("Maximum value:", max_value)
+
+# examples
+username = ""
+display_name = username if username else "Guest"
+print("Welcome,", display_name)
+
+# *****************************
+# logical operator
+a = 200
+b = 33
+c = 500
+if a > b and c > a:
+    print("Both condition are true")
+    
+# example of or operatior
+a = 200
+b = 33
+c = 500
+if a > b or a > c:
+    print("At least one of the conditions is true")
+    
+# example of not operator
+a = 33 
+b = 200
+if not a > b:
+    print("a is not greater than b")
+    
+# combining multiple operators 
+age = 25
+is_student = False
+has_discount_code = True
+
+if (age < 18 or age > 65) and not is_student or has_discount_code:
+    print("Discount applies!")
+
+# example
+temperature = 25
+is_raining = False
+is_weekend = True
+
+if (temperature > 20 and not is_raining)or is_weekend:
+    print("Great day for outdoor IsADirectoryError")
+
+# for complec condition
+temperature = 34
+is_raining = False
+is_weekend = True
+
+if(temperature > 20 and not is_raining) or is_weekend:
+    print("Great day for outdoor activities!")
+    
+# example
+# username = "Tobias"
+# password = "secrete123"
+# is_verified = True
+# if username and password and if_verfied:
+#     print("Login successful")
+# else:
+#     print("Login failed")
+    
+# raNGE     chaking 
+score = 85
+if score >= 0 and score <= 100:
+    print("Valid score")
+else:
+    print("Invalid score")
+    
+    
+# nested if statements
+x = 41 
+if x > 10:
+    print("Abovee ten,")
+if x > 20:
+    print("and also above 20!")
+else:
+     print("but not above 20.")
+    
+# nested multiple condition
+age = 25
+has_license = True
+if age >= 18:
+    if has_license:
+        print("You can drive")
+    else:
+        print("You need a lincense")
+else:
+    print("You are too young to drive")
+    
+#  multiple level of nestive
+score = 85
+attendance = 90
+submitted = True
+
+if score >= 60:
+    if attendance >= 80:
+        if submitted:
+            print("Pass with good standing")
+        else:
+            print("Pass but missing assignment")
+    else:
+     print("Pass but low attendance")
+else:
+    print("Fail")
+
+       
