@@ -283,34 +283,116 @@
 #     print("Invalid Account")
 
 # University exam result System
-StudentId = int(input("Enter sudent id: "))
-Name = input("Enter student name: ")
-Marks = int(input("Enter your mark: "))
-Attendance = float(input("Enter your percentage: "))
-Assignment_Submitted = input("assignment submitted or not: ")
-if StudentId == 2025:
-    print("Continue")
-    if Marks >= 40:
-        print("Continue")
-        if Attendance >= 75:
-            print("continue")
-            if Assignment_Submitted == "yes":
-                print("continue")             
-                if Marks >= 80:
-                    print("Congratulation!\nGrade:A")
-                elif Marks >= 70:
-                    print("Grade: B")
-                elif Marks >= 60:
-                    print("Grade: C")
-                elif Marks >= 50:
-                    print("Grade: D")
-                else:
-                    print("Grade: Pass")
-            else:
-                print("Failed because assignment was not submitted")
-        else:
-            print("Failed because of low attandence")
+# StudentId = int(input("Enter sudent id: "))
+# Name = input("Enter student name: ")
+# Marks = int(input("Enter your mark: "))
+# Attendance = float(input("Enter your percentage: "))
+# Assignment_Submitted = input("assignment submitted or not: ").lower(20)
+# if StudentId == 2025:
+#     print("Continue")
+#     if Marks >= 40:
+#         print("Continue")
+#         if Attendance >= 75:
+#             print("continue")
+#             if Assignment_Submitted == "yes":
+#                 print("continue")             
+#                 if Marks >= 80:
+#                     print("Congratulation!\nGrade:A")
+#                 elif Marks >= 70:
+#                     print("Grade: B")
+#                 elif Marks >= 60:
+#                     print("Grade: C")
+#                 elif Marks >= 50:
+#                     print("Grade: D")
+#                 else:
+#                     print("Grade: Pass")
+#             else:
+#                 print("Failed because assignment was not submitted")
+#         else:
+#             print("Failed because of low attandence")
+#     else:
+#         print("Failed due to low marks")
+# else:
+#     print("Invalid student Id")
+
+# *-++++-/--+-/-+---+-+--*-++/--
+# Resturant Ordering System 
+# Customer_Name = input("Enter customer name: ")
+# Membership = input("has_mambership (yes/not)?: ").title()
+# Food_category = input("Category: (Burger,Pizza,Drinks)")
+# Quantity = int(input("Enter quantity: "))
+# if Food_category == "Burger":
+#     Item = input("Enter burger type(chiken/beef): ").title()
+#     if Item == "Chicken":
+#         price = 250 
+#     elif Item == "Beef":
+#         price = 350
+#     else:
+#         print("Invalid burger type")
+#         exit()
+#     total = price * Quantity
+#     if Quantity >= 5:
+#         print("You get discount: ")
+#         total = total * 0.90
+#     print("Total Bill: ", total)
+
+Customer_Name = input("Enter customer name: ")
+Membership = input("Has membership (yes/no)?: ").title()
+Food_category = input("Category (Burger, Pizza, Drinks): ").title()
+Quantity = int(input("Enter quantity: "))
+
+if Food_category == "Burger":
+    Item = input("Enter burger type (Chicken/Beef): ").title()
+
+    if Item == "Chicken":
+        price = 250
+    elif Item == "Beef":
+        price = 350
     else:
-        print("Failed due to low marks")
+        print("Invalid burger type")
+        exit()
+
+elif Food_category == "Pizza":
+    Item = input("Enter pizza type (Small/Large): ").title()
+
+    if Item == "Small":
+        price = 500
+    elif Item == "Large":
+        price = 900
+    else:
+        print("Invalid pizza type")
+        exit()
+
+elif Food_category == "Drinks":
+    Item = input("Enter drink type (Coke/Juice): ").title()
+
+    if Item == "Juice":
+        price = 50
+    elif Item == "Coke":
+        price = 120
+    else:
+        print("Invalid drink type")
+        exit()
+
 else:
-    print("Invalid student Id")
+    print("Invalid category")
+    exit()
+
+total = price * Quantity
+
+discount = 0
+
+# Quantity discount
+if Quantity >= 5:
+    discount = total * 0.10
+
+final_price = total - discount
+
+print("\n------ CUSTOMER BILL ------")
+print("Customer Name :", Customer_Name)
+print("Category      :", Food_category)
+print("Item          :", Item)
+print("Quantity      :", Quantity)
+print("Total Bill    :", total)
+print("Discount      :", discount)
+print("Final Price   :", final_price)
