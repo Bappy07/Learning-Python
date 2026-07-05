@@ -126,16 +126,116 @@
 #     print("Reach level 10 first")
 
 # employee bonus
-years_of_service = int(input())
-performance = input("Bhalo nakie kharap? good/bad: ")
-attendance = int(input())
-if years_of_service >= 5:
-    if performance == "good":
-        if attendance >= 90:
-            print("Bonus Approved")
-        else:
-            print("Attendance too low for bonus")
-    else:
-        print("Performance not eligible")
-else:
-    print("not enough years of service")
+# years_of_service = int(input())
+# performance = input("Bhalo nakie kharap? good/bad: ")
+# attendance = int(input())
+# if years_of_service >= 5:
+#     if performance == "good":
+#         if attendance >= 90:
+#             print("Bonus Approved")
+#         else:
+#             print("Attendance too low for bonus")
+#     else:
+#         print("Performance not eligible")
+# else:
+#     print("not enough years of service")
+
+# Grade calculator using elif
+# mark = int(input("enter your mark: "))
+# if mark >= 80:
+#     print("Grade A")
+# elif mark >= 70:
+#     print("Grade B")
+# elif mark >= 60:
+#     print("Grade C")
+# elif mark >= 50:
+#     print("Grade D")
+# else:
+#     print("Fail")
+    
+# example of elif
+# color = input("Select a color: ")
+# if color == "red":
+#     print("Stop")
+# elif color == "yellow":
+#     print("Ger Ready")
+# elif color == "green":
+#     print("Go")
+# else:
+#     print("Invalid signal")
+    
+# example of day of the week
+# day = int(input("Enter the day : "))
+# if day == 1:
+#     print("Monday")
+# elif day == 2:
+#     print("Tuesday")
+# elif day == 3:
+#     print("Wednesday")
+# elif day == 4:
+#     print("Thursday")
+# elif day == 5:
+#     print("Friday")
+# elif day == 6:
+#     print("Staurday")
+# elif day == 7:
+#     print("Invalid Day")
+
+# calculator 
+# temperature = int(input("What is the temp: "))
+# if temperature >= 35:
+#     print("Very Hot")
+# elif temperature >= 24 and temperature <= 34:
+#     print("Warm")
+# elif temperature >= 15 and temperature <= 24:
+#     print("Pleasent")
+# elif temperature >= 5 and temperature <= 14:
+#     print("Cold")
+# else:
+#     print("Very Cold")
+    
+# movie ticket price
+# age = int(input("Enter age number: "))
+# if age < 5:
+#     print("Free")
+# elif age >= 5 and age <= 12:
+#     print("100 tk lagbe")
+# elif age >= 13 and age <= 59:
+#     print("200 tk lagbe")
+# else:
+#     print("150 tk")
+
+
+# ////////////////////////////////
+# Hardest problem of if else elif
+# ac_num = int(input("Enter the account number: "))
+# pin = int(input("Enter your pin number: "))
+# balance = int(input("Enter your balance: "))
+# transaction = input("Enter transaction type (withdraw,deposite,check): ")
+# amount = int(input("Enter amount:  "))
+# if ac_num == 1001:
+#     print("Continue")
+# else:
+#     print("Invalid account")
+# if pin == 4321:
+#     print("Continue")
+# else:
+#     print("Incorrect Pin")
+# if transaction == "withdraw":
+#     if amount <= 0:
+#         print("Invalid ammount")
+#     elif amount > balance:
+#         print("Insufficient Balance")
+# else:
+#     print("Withdrawal Successful")
+#     print("Remaining Balance: ", balance - transaction)
+# if amount > 0:
+#     print("Deposite Successful")
+#     print("New Balance: ", balance + transaction)
+# else:
+#     print("Invalid Ammount")
+# if transaction == "check":
+#     print("Current Balance: ", balance - transaction)
+# else:
+#     print("Invalid Transation Type ")
+
