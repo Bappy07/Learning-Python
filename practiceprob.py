@@ -239,3 +239,45 @@
 # else:
 #     print("Invalid Transation Type ")
 
+
+ac_num = int(input("Enter the account number: "))
+pin = int(input("Enter your PIN: "))
+balance = int(input("Enter your balance: "))
+transaction = input("Enter transaction type (withdraw, deposit, check): ").lower()
+
+if ac_num == 1001:
+    if pin == 4321:
+
+        if transaction == "withdraw":
+            amount = int(input("Enter amount: "))
+
+            if amount <= 0:
+                print("Invalid Amount")
+            elif amount > balance:
+                print("Insufficient Balance")
+            else:
+                balance = balance - amount
+                print("Withdrawal Successful")
+                print("Remaining Balance:", balance)
+
+        elif transaction == "deposit":
+            amount = int(input("Enter amount: "))
+
+            if amount > 0:
+                balance = balance + amount
+                print("Deposit Successful")
+                print("New Balance:", balance)
+            else:
+                print("Invalid Amount")
+
+        elif transaction == "check":
+            print("Current Balance:", balance)
+
+        else:
+            print("Invalid Transaction Type")
+
+    else:
+        print("Incorrect PIN")
+
+else:
+    print("Invalid Account")
