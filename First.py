@@ -355,3 +355,91 @@ else:
     print("Fail")
 
        
+=================the while loop============
+i = 1
+while i < 6:
+    print(i)
+    i += 1
+============== the break statement==============
+i = 1
+while i < 6:
+    print(i)
+    if i == 3:
+        break
+    i += 1
+
+the continue statement============
+i = 0
+while i < 6:
+    i += 1
+    if i == 3:
+        continue
+    print(i)
+
+the else statement==============
+i = 1
+while i < 6:
+    print(i)
+    i += 1
+else:
+    print("i is no longer lees than 6")
+
+=============== for loop statement==============
+fruits = ["apple","banana","cherry"]
+for x in fruits:
+    print(x)
+    
+===========Looping through a string==============
+for x in "banana":
+    print(x)
+    
+fruits = ["apple","banana","cherry"]
+for x in fruits:
+    if x == "cherry":
+        break
+    print(x)
+
+========
+fruits = ["apple","banana","cherry"]
+for x in fruits:
+    print(x)
+    if x == "banana":
+        break
+=================
+fruits = ["apple","banana","cherry"]
+for x in fruits:
+    if x == "banana":
+        continue
+    print(x)
+
+************
+for x in range(6):
+    print(x)
+
+============= INCREMENT THE RANGE OR NUMBER ================  
+for x in range(2,30,3):
+    print(x)
+=============else in for loop
+for x in range(6):
+    print(x)
+else:
+    print("Finaly finished!")
+
+
+for x in range(6):
+    if x == 3: break
+    print(x)
+else:
+    print("Finaly finshed!")
+
+
+================Nested Loops=======================
+adj = ["red", "big", "tasty"]
+fruits = ["apple","banana","cherry"]
+for x in adj:
+    for y in fruits:
+        print(x,y)
+
+The Pass Statement =================
+for x in [0,1,2]:
+    pass
