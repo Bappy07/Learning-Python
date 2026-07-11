@@ -397,91 +397,209 @@
 # print("Discount      :", discount)
 # print("Final Price   :", final_price)
 
-# =================the while loop============
-# i = 1
-# while i < 6:
-#     print(i)
-#     i += 1
-# ============== the break statement==============
-# i = 1
-# while i < 6:
-#     print(i)
-#     if i == 3:
-#         break
-#     i += 1
+# ===================+++++=====================++++++============+++++++++++++
+# ===================+++++=====================++++++============+++++++++++++
+#   ==================== FOR LOOP AND WHILE LOOP EXESRCISE WITH PYTHON ====================
 
-# the continue statement============
-# i = 0
-# while i < 6:
-#     i += 1
-#     if i == 3:
-#         continue
-#     print(i)
+#   print Hello word ten times
+# for x in range(10):
+#     print("Hello, WORLD!")
+# using while loop 
+# count = 1
+# while count <= 10:
+#     print("Hello,World!")
+#     count += 1
+    
+# +=====================+
+# /                     /
+# +=====================+
+# PRINT NUMBERS FROM 1 TO 10
 
-# the else statement==============
-# i = 1
-# while i < 6:
-#     print(i)
-#     i += 1
-# else:
-#     print("i is no longer lees than 6")
+# for y in range(1 , 11):
+#     print(y)
 
-# =============== for loop statement==============
-# fruits = ["apple","banana","cherry"]
-# for x in fruits:
+# +=====================+
+# /                     /
+# +=====================+
+# for x in range(10, 1 , -1):
 #     print(x)
     
-# ===========Looping through a string==============
-# for x in "banana":
+# ===========Print all even numbers from 1 to 50.
+# for x in range(1,51):
+#     if x % 2 == 0 :
+#         print(x)
+        
+# ============= Print all odd numbers from 1 to 50.
+# for y in range(1,51):
+#     if y % 2 != 0:
+#         print(y)
+        
+# =======Print the multiplication table of a number.
+# for b in range(1,11):
+#     print(f"5 x {b} = {5 * b}")
+# using variable
+# num = 5
+# for i in range(1,11):
+#     print(f"{num} x {i} = {num * i}")
+
+# ================
+# 5
+    
+# ===========Find the sum from 1 to N.
+# n = int(input("Enter any number: "))
+# total = 0
+# for i in range(1, n + 1):
+#     total = total + i
+#     print("Sum =", total)
+
+# n = int(input("Enter a number: "))
+# print(sum(range(1, n + 1)))
+
+# num = 100
+# total = 0
+# for i in range(1,num + 1):
+#     total = total + i
+#     print(total)
+
+#  Find the factorial of a number.
+# num = 5
+# fact = 1
+# for i in range(1,num + 1):
+#     fact = fact * i
+#     print(fact)
+    
+# Count from 100 to 0 by skipping 5.
+# n = 100
+# count = 0
+# for b in range(100,-1,-5):
+#     print(b)
+
+# ====================== Print every character of a string.
+# for x in "python":
 #     print(x)
     
-# fruits = ["apple","banana","cherry"]
-# for x in fruits:
-#     if x == "cherry":
-#         break
-#     print(x)
+# Count how many digits a number has.
+# n = 12345
+# count = 0
+# while n > 0:
+#     count += 1
+#     n //= 10
+#     print(n)
+    
+    
+# Reverse a number.==============
+# x = 12345
+# reverse = 0
+# while x > 0:
+#     digit = x % 10
+#     reverse = reverse * 10 + digit
+#     x //= 10
+#     print(reverse)
 
-# ========
-# fruits = ["apple","banana","cherry"]
-# for x in fruits:
-#     print(x)
-#     if x == "banana":
-#         break
-# =================
-# fruits = ["apple","banana","cherry"]
-# for x in fruits:
-#     if x == "banana":
-#         continue
-#     print(x)
+# print number from 1 to N
+# n = int(input("Enter a number: "))
+# for i in range(1,n+1):
+#     print(i)
+    
+# sum of first n number
+# n = int(input("Enter a number: "))
+# total = 0
+# for i in range(1 , n + 1):
+#     total += i
+# print("Sum=", total)
 
-# ************
-# for x in range(6):
-#     print(x)
+# count digit
+# n = int(input("Enter a num: "))
+# count = 0
+# while n > 0:
+#     count += 1
+#     n//= 10
+# print("total=",count)
 
-# ============= INCREMENT THE RANGE OR NUMBER ================  
-# for x in range(2,30,3):
-#     print(x)
-# =============else in for loop
-# for x in range(6):
-#     print(x)
+# reverse a number
+# n = int(input("Enter a num:"))
+# reverse = 0
+# while n > 0:
+#     digit = n % 10
+#     reverse = reverse * 10 + digit
+#     n//= 10
+# print(reverse)
+
+# Largest 3 number
+# k = int(input())
+# l = int(input())
+# m = int(input())
+# largest = k 
+# if l > k:
+#     largest = l
+# if m > k:
+#     largest = m
+# print("Largest is the:", largest)
+
+# multiplication table
+# a = int(input("Put a num: "))
+# for i in range(1,11):
+#     print(f"{a} x {i} = {a * i}")
+
+# prime number
+# n = int(input())
+# prime = True
+# if n <= 1:
+#     prime = False
 # else:
-#     print("Finaly finished!")
-
-
-# for x in range(6):
-#     if x == 3: break
-#     print(x)
+#     for i in range(2,n):
+#         if n % i == 0:
+#             prime = False
+#             break
+# if prime:
+#     print("Prime")
 # else:
-#     print("Finaly finshed!")
+#     print("Not Prime")
 
+# sum of digits
+# n = int(input("Enter a num: "))
+# total = 0
+# while n > 0:
+#     digit = n % 10
+#     total += digit
+#     n //= 10
+# print(total)
 
-# ================Nested Loops=======================
-# adj = ["red", "big", "tasty"]
-# fruits = ["apple","banana","cherry"]
-# for x in adj:
-#     for y in fruits:
-#         print(x,y)
+# factorial
+# n = 10
+# fact = 1
+# for i in range(1,n + 1):
+#     fact *= i
+# print(fact)
 
-# The Pass Statement =================
-# for x in [0,1,2]:
-#     pass
+# count odd digits in a number
+# n = int(input("Enter a num: "))
+# count = 0
+# while n > 0:
+#     digit = n % 10
+#     if digit % 2 != 0:
+#         count += 1
+#     n //= 10
+# print(count)
+ 
+# find the largest digit in a num
+# n = int(input("Enter a num:"))
+# largest = 0
+# while n > 0:
+#      digit = n % 10
+#      if digit > largest:
+#         largest = digit
+#      n //= 10
+# print("Largest digit",largest)
+        
+   
+# find the smallest num in a digit
+n = int(input("Enter a num:"))
+smallest = n % 10
+while n > 0:
+     digit = n % 10
+     if digit < smallest:
+        smallest = digit
+     n //= 10
+print("small digit",smallest)
+        
